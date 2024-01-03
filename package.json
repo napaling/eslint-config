@@ -2,9 +2,15 @@
   "name": "@napaling/eslint-config",
   "version": "0.0.0-alpha.0",
   "description": "Napaling's ESLint config preset.",
-  "repository": "github:napaling/eslint-config",
   "author": "Glenn Reyes <glenn@glennreyes.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/napaling/eslint-config.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "keywords": [
     "eslint",
@@ -16,7 +22,7 @@
   "scripts": {
     "format": "prettier --list-different --write . && pnpm lint --fix",
     "lint": "eslint .",
-    "release": "dotenv release-it --"
+    "release": "dotenv release-it"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^1.5.1",
