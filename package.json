@@ -1,0 +1,50 @@
+{
+  "name": "@napaling/eslint-config",
+  "version": "0.0.0-alpha.0",
+  "description": "Napaling's ESLint config preset.",
+  "repository": "github:napaling/eslint-config",
+  "author": "Glenn Reyes <glenn@glennreyes.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "format": "prettier --list-different --write . && pnpm lint --fix",
+    "lint": "eslint .",
+    "release": "dotenv release-it --"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^1.5.1",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint-config-next": "^14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-deprecation": "^2.0.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-only-error": "^1.0.2",
+    "eslint-plugin-perfectionist": "^2.5.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-tailwindcss": "^3.13.1",
+    "eslint-plugin-unicorn": "^50.0.1",
+    "eslint-plugin-unused-imports": "^3.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.3",
+    "@types/eslint": "^8.56.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "release-it": "^17.0.1",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8"
+  }
+}

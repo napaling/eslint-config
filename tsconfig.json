@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true
+  },
+  "extends": "@tsconfig/recommended/tsconfig",
+  "include": ["*.js", ".*.js", "*.mjs"]
+}
