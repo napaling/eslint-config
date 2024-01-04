@@ -68,6 +68,7 @@ module.exports = {
     curly: 'error',
     eqeqeq: ['error', 'always', { null: 'ignore' }],
     'func-style': ['error', 'expression', { allowArrowFunctions: true }],
+    'import/consistent-type-specifier-style': 'error',
     'import/first': 'error',
     'import/newline-after-import': 'error',
     'import/no-anonymous-default-export': 'error',
