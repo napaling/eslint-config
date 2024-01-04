@@ -38,6 +38,9 @@ dependencies:
   eslint-plugin-perfectionist:
     specifier: ^2.5.0
     version: 2.5.0(eslint@8.56.0)(typescript@5.3.3)
+  eslint-plugin-prefer-arrow-functions:
+    specifier: ^3.2.4
+    version: 3.2.4(eslint@8.56.0)
   eslint-plugin-react:
     specifier: ^7.33.2
     version: 7.33.2(eslint@8.56.0)
@@ -1801,6 +1804,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - typescript
+    dev: false
+
+  /eslint-plugin-prefer-arrow-functions@3.2.4(eslint@8.56.0):
+    resolution: {integrity: sha512-HbPmlbO/iYQeVs2fuShNkGVJDfVfgSd84Vzxv+xlh+nIVoSsZvTj6yOqszw4mtG9JbiqMShVWqbVeoVsejE59w==}
+    peerDependencies:
+      eslint: '>=5.0.0'
+    dependencies:
+      eslint: 8.56.0
     dev: false
 
   /eslint-plugin-react-hooks@4.6.0(eslint@8.56.0):

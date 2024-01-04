@@ -19,7 +19,7 @@ module.exports = {
   parserOptions: {
     project: true,
   },
-  plugins: ['@stylistic', 'only-error', 'unused-imports'],
+  plugins: ['@stylistic', 'only-error', 'prefer-arrow', 'unused-imports'],
   rules: {
     '@stylistic/jsx-curly-brace-presence': 'error',
     '@stylistic/padding-line-between-statements': [
@@ -61,6 +61,7 @@ module.exports = {
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
     curly: 'error',
     eqeqeq: ['error', 'always', { null: 'ignore' }],
+    'func-style': ['error', 'expression', { allowArrowFunctions: true }],
     'import/first': 'error',
     'import/newline-after-import': 'error',
     'import/no-anonymous-default-export': 'error',
@@ -77,11 +78,16 @@ module.exports = {
     'no-useless-rename': 'error',
     'no-warning-comments': 'error',
     'object-shorthand': 'error',
-    'prefer-arrow-callback': [2, { allowNamedFunctions: true }],
+    'prefer-arrow-callback': 'error',
+    'prefer-arrow-functions/prefer-arrow-functions': [
+      'error',
+      { returnStyle: 'implicit' },
+    ],
     'prefer-template': 'error',
     'react/jsx-boolean-value': 'error',
     'react/jsx-handler-names': 'error',
     'react/no-unknown-property': ['error', { ignore: ['tw'] }],
+    'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/self-closing-comp': 'error',
     'unicorn/no-nested-ternary': 'off',
