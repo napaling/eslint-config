@@ -24,7 +24,11 @@ module.exports = {
     '@stylistic/jsx-curly-brace-presence': 'error',
     '@stylistic/padding-line-between-statements': [
       'error',
-      { blankLine: 'always', next: ['block-like', 'return'], prev: '*' },
+      {
+        blankLine: 'always',
+        next: ['block-like', 'export', 'return'],
+        prev: '*',
+      },
       { blankLine: 'always', next: ['*'], prev: ['block-like'] },
       {
         blankLine: 'always',
