@@ -19,7 +19,12 @@ module.exports = {
   parserOptions: {
     project: true,
   },
-  plugins: ['@stylistic', 'only-error', 'prefer-arrow', 'unused-imports'],
+  plugins: [
+    '@stylistic',
+    'only-error',
+    'prefer-arrow-functions',
+    'unused-imports',
+  ],
   rules: {
     '@stylistic/jsx-curly-brace-presence': 'error',
     '@stylistic/padding-line-between-statements': [
