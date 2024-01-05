@@ -27,6 +27,10 @@ module.exports = {
   ],
   rules: {
     '@stylistic/jsx-curly-brace-presence': 'error',
+    '@stylistic/lines-around-comment': [
+      'error',
+      { afterHashbangComment: true },
+    ],
     '@stylistic/padding-line-between-statements': [
       'error',
       {
@@ -46,6 +50,7 @@ module.exports = {
     '@typescript-eslint/consistent-type-exports': 'error',
     '@typescript-eslint/consistent-type-imports': 'error',
     '@typescript-eslint/default-param-last': 'error',
+
     '@typescript-eslint/method-signature-style': 'error',
     '@typescript-eslint/no-floating-promises': ['error', { ignoreIIFE: true }],
     '@typescript-eslint/no-import-type-side-effects': 'error',
