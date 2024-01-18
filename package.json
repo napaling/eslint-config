@@ -25,9 +25,9 @@
     "release": "dotenv release-it"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^1.5.3",
-    "@typescript-eslint/eslint-plugin": "^6.17.0",
-    "@typescript-eslint/parser": "^6.17.0",
+    "@stylistic/eslint-plugin": "^1.5.4",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
     "eslint-config-next": "^14.0.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-deprecation": "^2.0.0",
@@ -39,16 +39,16 @@
     "eslint-plugin-prefer-arrow-functions": "^3.2.4",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-tailwindcss": "^3.13.1",
+    "eslint-plugin-tailwindcss": "^3.14.0",
     "eslint-plugin-unicorn": "^50.0.1",
     "eslint-plugin-unused-imports": "^3.0.0"
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.3",
-    "@types/eslint": "^8.56.1",
+    "@types/eslint": "^8.56.2",
     "dotenv-cli": "^7.3.0",
     "eslint": "^8.56.0",
-    "prettier": "^3.1.1",
+    "prettier": "^3.2.4",
     "release-it": "^17.0.1",
     "typescript": "^5.3.3"
   },
