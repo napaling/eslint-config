@@ -14,7 +14,6 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'prettier',
   ],
   parserOptions: {
     project: true,
