@@ -1,8 +1,11 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
+  env: {
+    browser: true,
+    node: true,
+  },
   extends: [
     'eslint:recommended',
-    'next/core-web-vitals',
     'plugin:@typescript-eslint/strict-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:deprecation/recommended',
@@ -11,9 +14,6 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:perfectionist/recommended-natural',
     'plugin:unicorn/recommended',
-    'plugin:jsx-a11y/recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
   ],
   parserOptions: {
     project: true,
@@ -97,12 +97,6 @@ module.exports = {
       { returnStyle: 'implicit' },
     ],
     'prefer-template': 'error',
-    'react/jsx-boolean-value': 'error',
-    'react/jsx-handler-names': 'error',
-    'react/no-unknown-property': ['error', { ignore: ['tw'] }],
-    'react/prop-types': 'off',
-    'react/react-in-jsx-scope': 'off',
-    'react/self-closing-comp': 'error',
     'unicorn/no-nested-ternary': 'off',
     'unicorn/no-null': 'off',
     'unicorn/prevent-abbreviations': 'off',
